@@ -15,11 +15,13 @@ declare namespace Cypress {
     interface Chainable<Subject> {
         getByDataCy(name: string): Cypress.Chainable<JQuery<HTMLElement>>;
         getLinkByHref(name: string): Cypress.Chainable<JQuery<HTMLElement>>;
+        getById(name: string): Cypress.Chainable<JQuery<HTMLElement>>;
     }
   }
   
   Cypress.Commands.add('getByDataCy', (name) => cy.get(`[data-cy=${name}]`));
   Cypress.Commands.add('getLinkByHref', (link) => cy.get(`a[href="${link}"]`));
+  Cypress.Commands.add('getById', (id) => cy.get(`#${id}`));
   
   //
   // -- This is a child command --
