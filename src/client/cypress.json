@@ -1,3 +1,10 @@
 {
-    "baseUrl": "http://localhost:8080"
-  }
+  "baseUrl": "http://localhost:8080",
+  "reporter": "",
+  "reporterOptions": {
+    "mochaFile": "tests/TEST-output-[hash].xml",
+    "toConsole": true,
+    "attachments": true
+  },
+  "video" : false
+}
