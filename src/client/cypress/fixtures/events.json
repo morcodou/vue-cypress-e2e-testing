@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "1",
+    "name": "Intercepted Event (list)",
+    "venue": "Intercepted Venue (list)",
+    "date": "2022-05-05",
+    "time": "12:00AM",
+    "ticketQuantity": 100,
+    "isCancelled": false,
+    "image": "./assets/event-1.jpg"
+  }
+]
